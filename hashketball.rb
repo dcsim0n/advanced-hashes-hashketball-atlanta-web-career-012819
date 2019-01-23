@@ -169,7 +169,7 @@ def player_stats(player)
   team[:players][player]
 end
 
-def big_shoe_rebounds()
+def big_shoe_rebounds_orginal()
   players = game_hash[:home][:players]
   players.merge!(game_hash[:away][:players])
   bigshoes = players[players.keys[0]]
@@ -179,6 +179,8 @@ def big_shoe_rebounds()
     end
   end
   bigshoes[:rebounds]
-    
+  #game_hash[:home][:players].each 
 end
+
+  
 binding.pry
